@@ -94,10 +94,10 @@ import pandas as pd
 import numpy as np
 
 
-# In[498]:
+# In[526]:
 
 
-teacher_df = pd.read_csv(r'nj_state_teachers_salaries.csv') 
+teacher_df = pd.read_csv(r'nj_state_teachers_salaries.csv', low_memory=False) 
 teacher_df.head(5)
 
 
