@@ -4,79 +4,70 @@
 # In[1]:
 
 
-#import mysql.connector as sq
+import mysql.connector as sq
 
 
 # In[2]:
 
 
-#mydb = sq.connect(host = "localhost",user = "root", password = "123456789!", buffered = True,
-#                  auth_plugin='mysql_native_password', allow_local_infile=True)
+mydb = sq.connect(host = "localhost",user = "root", password = "123456789!", buffered = True,
+                 auth_plugin='mysql_native_password', allow_local_infile=True)
 
 
 # In[3]:
 
 
-#mycursor = mydb.cursor()
+mycursor = mydb.cursor()
 
 
 # In[4]:
 
 
-#mycursor.execute("CREATE DATABASE NJ;")
+mycursor.execute("CREATE DATABASE NJ;")
 
 
 # In[5]:
 
 
-# mycursor.execute("CREATE TABLE NJ.teacher (last_name VARCHAR(50), \
-# first_name VARCHAR(50),county VARCHAR(100),district VARCHAR(100), \
-# school VARCHAR(200), primary_job VARCHAR(300),fte DOUBLE, \
-# salary INT,certificate VARCHAR(100),subcategory VARCHAR(50), \
-# teaching_route VARCHAR(50),highly_qualified VARCHAR(200), \
-# experience_district INT,experience_nj INT,experience_total INT);")
+mycursor.execute("CREATE TABLE NJ.teacher (last_name VARCHAR(50), first_name VARCHAR(50),county VARCHAR(100),district VARCHAR(100), school VARCHAR(200), primary_job VARCHAR(300),fte DOUBLE, salary INT,certificate VARCHAR(100),subcategory VARCHAR(50), teaching_route VARCHAR(50),highly_qualified VARCHAR(200), experience_district INT,experience_nj INT,experience_total INT);")
 
 
 # In[6]:
 
 
-# mycursor.execute("LOAD DATA LOCAL INFILE '/Users/kkc/Desktop/harvard/Python for Engineering/week2/nj_state_teachers_salaries.csv' \
-#                  INTO TABLE NJ.teacher \
-#                  FIELDS TERMINATED BY ',' \
-#                  LINES TERMINATED BY '\n'  \
-#                  IGNORE 1 ROWS;")
+mycursor.execute("LOAD DATA LOCAL INFILE '/Users/kkc/Desktop/harvard/Python for Engineering/week2/nj_state_teachers_salaries.csv'                  INTO TABLE NJ.teacher                  FIELDS TERMINATED BY ','                  LINES TERMINATED BY '\n'                   IGNORE 1 ROWS;")
 
 
 # In[7]:
 
 
-#mycursor.execute("SHOW TABLES FROM NJ;")
+mycursor.execute("SHOW TABLES FROM NJ;")
 
 
 # In[8]:
 
 
-# for db in mycursor:
-#     print(db)
+for db in mycursor:
+    print(db)
 
 
 # In[9]:
 
 
-#mycursor.execute("USE NJ;")
+mycursor.execute("USE NJ;")
 
 
 # In[10]:
 
 
-#mycursor.execute("SELECT * FROM teacher;")
+mycursor.execute("SELECT * FROM teacher;")
 
 
 # In[11]:
 
 
-# for db in mycursor:
-#     print(db)
+for db in mycursor:
+    print(db)
 
 
 # In[ ]:
