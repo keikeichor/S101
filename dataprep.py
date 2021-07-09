@@ -10,7 +10,7 @@ import pandas as pd
 # In[3]:
 
 
-sample_df = pd.read_csv('teachersample.csv', low_memory=False) 
+sample_df = pd.read_csv(r'/autograder/source/teachersample.csv', escapechar='\\') 
 sample_df.head(5)
 
 
