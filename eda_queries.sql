@@ -30,7 +30,7 @@ highly_qualified, experience_district, experience_nj,experience_total FROM NJ_cl
 ORDER BY RAND(7) 
 LIMIT 777)
 
-INTO OUTFILE '/Users/kkc/tmp/teachersample.csv' 
+INTO OUTFILE '/autograder/submission/teachersample.csv' 
 FIELDS TERMINATED BY ','
 LINES TERMINATED BY '\n';
 
@@ -47,7 +47,7 @@ salary FLOAT,certificate VARCHAR(100),subcategory VARCHAR(50),
 teaching_route VARCHAR(50),highly_qualified VARCHAR(200),
 experience_district FLOAT,experience_nj FLOAT,experience_total FLOAT);
 
-LOAD DATA INFILE '/Users/kkc/tmp/teachersample.csv'
+LOAD DATA INFILE '/autograder/submission/teachersample.csv'
 INTO TABLE teacher_sample.teachers
 FIELDS TERMINATED BY ','
 LINES TERMINATED BY '\n'
