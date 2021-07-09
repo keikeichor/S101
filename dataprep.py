@@ -1,11 +1,10 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[1]:
+# In[67]:
 
 
 import pandas as pd
-import numpy as np
 
 
 # In[3]:
@@ -33,10 +32,10 @@ sample_df.head(5)
 sample_df[(sample_df['salary'] > 150000) & (sample_df['experience_total'] < 5)]
 
 
-# In[6]:
+# In[82]:
 
 
-sample_df[(sample_df['salary'] > 150000) & (sample_df['experience_total'] < 5)]['last_name']
+sample_df[(sample_df['salary'] > 150000) & (sample_df['experience_total'] < 5)]['last_name'].values
 
 
 # In[52]:
@@ -45,23 +44,23 @@ sample_df[(sample_df['salary'] > 150000) & (sample_df['experience_total'] < 5)][
 sample_df[(sample_df['salary'] > 150000) & (sample_df['experience_total'] < 5)].pivot(index = 'salary',columns ='experience_total', values = 'last_name')
 
 
+# In[83]:
+
+
+print('people making > 150,000 with total experience < 5 yrs:', sample_df[(sample_df['salary'] > 150000) & (sample_df['experience_total'] < 5)]['last_name'].values)
+
+
 # In[ ]:
 
 
 
 
 
-# In[ ]:
+# In[85]:
 
 
-
-
-
-# In[23]:
-
-
-sample_df[(sample_df['district'].str.contains('Atlantic City') == True) 
-          & (sample_df['primary_job'].str.contains('School Psychologist') == True)]['last_name']
+print('people are School Psychologist that work in Atlantic City: ', sample_df[(sample_df['district'].str.contains('Atlantic City') == True) 
+          & (sample_df['primary_job'].str.contains('School Psychologist') == True)]['last_name'])
 
 
 # In[25]:
@@ -117,18 +116,25 @@ print( 'last name and salary of the lowest earner who works in Atlantic City is:
 
 
 
-# In[54]:
+# In[86]:
 
 
 sample_df[(sample_df['district'].str.contains('Passaic City') == True) 
-          & (sample_df['experience_total'] > True)]['last_name']
+          & (sample_df['experience_total'] > 10)]['last_name']
 
 
-# In[63]:
+# In[87]:
 
 
 sample_df[(sample_df['district'].str.contains('Passaic City') == True) 
-          & (sample_df['experience_total'] > True)].pivot(index='last_name',columns='district', values = 'experience_total')
+          & (sample_df['experience_total'] > 10)].pivot(index='last_name',columns='district', values = 'experience_total')
+
+
+# In[89]:
+
+
+print('people working in Passaic City with more than ten years of total experience are:', sample_df[(sample_df['district'].str.contains('Passaic City') == True) 
+          & (sample_df['experience_total'] > 10)]['last_name'].values)
 
 
 # In[ ]:
