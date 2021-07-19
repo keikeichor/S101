@@ -20,7 +20,7 @@ class Order(Account):
 
                 
     def UpdateBalance(self):
-        if self.oCost < 10.95:
+        if self.oCost > 10.95:
             if len(self.uName)>1:
                 if self.uName == 'Harvard':
                     self.fBalance = self.fBalance + 3
