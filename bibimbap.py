@@ -104,7 +104,7 @@ order1.updateGPA(3.5)
 # In[25]:
 
 
-print(order1.GPA)
+print(order1.__GPA)
 
 
 # In[ ]:
