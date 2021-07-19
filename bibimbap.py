@@ -23,13 +23,13 @@ class Order(Account):
         if self.oCost >= 10.95:
             if len(self.uName)>1:
                 if self.uName == 'Harvard':
-                    self.fBalance = self.fBalance + 3
+                    self.fBalance = self.fBalance + 4
                 elif self.uName == 'MIT':
-                    self.fBalance = self.fBalance + 2
+                    self.fBalance = self.fBalance + 3
                 else:
-                    self.fBalance = self.fBalance + 1
+                    self.fBalance = self.fBalance + 2
             else:
-                self.fBalance = self.fBalance + 0
+                self.fBalance = self.fBalance + 1
                 
 #         else:
 #             self.fBalance = self.fBalance + 1
