@@ -51,14 +51,15 @@ SAT2
 # In[49]:
 
 
-TestResults = ttest_rel(SAT1,SAT2).statistic
-print('t statistics for the two SAT arrays is:', TestResults)
+TestResults = ttest_rel(SAT1,SAT2)
+print('t statistics for the two SAT arrays is:', TestResults.statistic)
+print('p value for the two SAT arrays is:', TestResults.pvalue)
 
 
 # In[50]:
 
-pvalue = ttest_rel(SAT1,SAT2).pvalue
-if pvalue> 0.05:
+
+if TestResults.pvalue> 0.05:
     Significance = False
 else:
     Significance = True
