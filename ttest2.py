@@ -57,8 +57,8 @@ print('t statistics for the two SAT arrays is:', TestResults)
 
 # In[50]:
 
-
-if ttest_rel(SAT1,SAT2).pvalue> 0.05:
+pvalue = ttest_rel(SAT1,SAT2).pvalue
+if pvalue> 0.05:
     Significance = False
 else:
     Significance = True
