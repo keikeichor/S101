@@ -38,9 +38,9 @@ P_density = False
 # In[37]:
 
 
-F_significance = RegResults.f_pvalue
+F_pvalue = RegResults.f_pvalue
 
-if F_significance < 0.05:
+if F_pvalue < 0.05:
      F_Significance = True
 else:
      F_Significance = False
@@ -58,9 +58,9 @@ print(RegResults.pvalues)
 
 
 
-P_Pop = RegResults.pvalues.Pop
+Pop_pvalue = RegResults.pvalues.Pop
 
-if P_Pop < 0.05:
+if Pop_pvalue < 0.05:
      P_Pop = True
 else:
      P_Pop = False
@@ -71,9 +71,9 @@ P_Pop
 # In[40]:
 
 
-P_density = RegResults.pvalues.density
+density_pvalue = RegResults.pvalues.density
 
-if P_density < 0.05:
+if density_pvalue  < 0.05:
      P_density = True
 else:
      P_density = False
