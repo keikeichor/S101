@@ -5,13 +5,13 @@
 
 
 import pandas as pd
-get_ipython().run_line_magic('matplotlib', 'inline')
 
-from statsmodels.formula.api import ols
-from statsmodels.stats.outliers_influence import variance_inflation_factor
+
+#from statsmodels.formula.api import ols
+#from statsmodels.stats.outliers_influence import variance_inflation_factor
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LogisticRegression
-from sklearn.metrics import classification_report as report
+
 
 
 # In[11]:
