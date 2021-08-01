@@ -4,7 +4,8 @@
 # In[94]:
 
 
-!pip install --user -U nltk
+#!pip install --user -U nltk
+import nlp
 import nltk
 nltk.download('punkt')
 nltk.download('stopwords')
