@@ -4,12 +4,12 @@
 # In[94]:
 
 
-pip install test_nlp
-pip install matplotlib
+#pip install test_nlp
+#pip install matplotlib
 import nlp
 import nltk
 import test_nlp
-import matplotlib.pyplot as plt
+import matplotlib.pyplot
 
 
 nltk.download('punkt')
