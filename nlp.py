@@ -7,7 +7,7 @@
 #!pip install -
 import nlp
 import nltk
-from tensorlayer import test_nlp
+import test_nlp
 nltk.download('punkt')
 nltk.download('stopwords')
 
