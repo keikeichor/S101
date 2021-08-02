@@ -106,23 +106,23 @@ print(FilteredWords)
 
 ps = PorterStemmer()
 
-stemmed_words=[]
+StemWords=[]
 for word in FilteredWords:
-    stemmed_words.append(ps.stem(word))
+    StemWords.append(ps.stem(word))
 
-print("stemmed words: ",stemmed_words)
+print("stemmed words: ",StemWords)
 
 
 # In[112]:
 
 
-Freq = FreqDist(stemmed_words)
+Freq = FreqDist(StemWords)
 
-for word, frequency in Freq.most_common(10):
+for word, frequency in Freq.most_common(30):
       print("{}:{}".format(word, frequency))
 
 
-#Freq.plot(10,title="Top 10 from Intern Review", linewidth=10, color="g");
+Freq.plot(30,title="Top 30 from Intern Review", linewidth=10, color="g");
 
 
 # In[ ]:
