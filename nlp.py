@@ -9,7 +9,7 @@
 import nlp
 import nltk
 import test_nlp
-import matplotlib.pyplot
+#import matplotlib.pyplot
 
 
 nltk.download('punkt')
@@ -69,6 +69,13 @@ for line in Lines:
 print(mystr)
 
 
+
+mystr.replace('millennials.In', 'millennials. In')
+mystr.replace('environment.The', 'environment. The')
+mystr.replace('problem.Looks', 'problem. Looks')
+
+
+
 # In[106]:
 
 
@@ -115,7 +122,7 @@ for word, frequency in Freq.most_common(10):
       print("{}:{}".format(word, frequency))
 
 
-Freq.plot(10,title="Top 10 from Intern Review", linewidth=10, color="g");
+#Freq.plot(10,title="Top 10 from Intern Review", linewidth=10, color="g");
 
 
 # In[ ]:
