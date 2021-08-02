@@ -73,6 +73,11 @@ print(mystr)
 mystr = mystr.replace('millennials.In', 'millennials. In')
 mystr = mystr.replace('environment.The', 'environment. The')
 mystr = mystr.replace('problem.Looks', 'problem. Looks')
+mystr = mystr.replace('list.The', 'list. The')
+mystr = mystr.replace('grace.Anne', 'grace. Anne')
+mystr = mystr.replace('happy.Overall', 'happy. Overall')
+mystr = mystr.replace('drama.Go' , 'drama. Go' )
+mystr = mystr.replace('on.The' , 'on. The' )
 
 
 
