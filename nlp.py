@@ -8,6 +8,9 @@
 import nlp
 import nltk
 import test_nlp
+import matplotlib
+
+
 nltk.download('punkt')
 nltk.download('stopwords')
 
