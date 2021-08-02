@@ -78,6 +78,9 @@ mystr = mystr.replace('grace.Anne', 'grace. Anne')
 mystr = mystr.replace('happy.Overall', 'happy. Overall')
 mystr = mystr.replace('drama.Go' , 'drama. Go' )
 mystr = mystr.replace('on.The' , 'on. The' )
+mystr = mystr.replace('role.Overall' , 'role. Overall' )
+mystr = mystr.replace('again.Have' , 'again. Have' )
+
 
 
 
