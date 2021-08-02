@@ -7,6 +7,7 @@
 #!pip install --user -U nltk
 import nlp
 import nltk
+import test_nlp
 nltk.download('punkt')
 nltk.download('stopwords')
 
