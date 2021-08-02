@@ -4,7 +4,8 @@
 # In[94]:
 
 
-#!pip install -
+!pip install test_nlp
+!pip install matplotlib
 import nlp
 import nltk
 import test_nlp
