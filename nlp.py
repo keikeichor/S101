@@ -70,9 +70,9 @@ print(mystr)
 
 
 
-mystr.replace('millennials.In', 'millennials. In')
-mystr.replace('environment.The', 'environment. The')
-mystr.replace('problem.Looks', 'problem. Looks')
+mystr = mystr.replace('millennials.In', 'millennials. In')
+mystr = mystr.replace('environment.The', 'environment. The')
+mystr = mystr.replace('problem.Looks', 'problem. Looks')
 
 
 
