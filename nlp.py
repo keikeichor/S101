@@ -8,7 +8,7 @@
 import nlp
 import nltk
 import test_nlp
-import matplotlib
+import matplotlib.pyplot as plt
 
 
 nltk.download('punkt')
