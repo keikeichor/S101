@@ -4,10 +4,10 @@
 # In[94]:
 
 
-#!pip install --user -U nltk
+#!pip install -
 import nlp
 import nltk
-import test_nlp
+from tensorlayer import test_nlp
 nltk.download('punkt')
 nltk.download('stopwords')
 
@@ -76,7 +76,7 @@ print(MyWords,"\n")
 # In[107]:
 
 
-MyStopWords = set(stopwords.words("English"))
+MyStopWords = set(stopwords.words("english"))
 
 
 # In[109]:
