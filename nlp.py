@@ -122,7 +122,7 @@ for word, frequency in Freq.most_common(30):
       print("{}:{}".format(word, frequency))
 
 
-Freq.plot(30,title="Top 30 from Intern Review", linewidth=10, color="g");
+#Freq.plot(30,title="Top 30 from Intern Review", linewidth=10, color="g");
 
 
 # In[ ]:
